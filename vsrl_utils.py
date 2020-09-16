@@ -144,11 +144,11 @@ def attach_gt_boxes(vsrl_data, coco):
   return vsrl_data
 
 def unicode_to_str(input):
-  if isinstance(input, dict):
-    return {unicode_to_str(key):unicode_to_str(value) for key,value in input.iteritems()}
-  elif isinstance(input, list):
-    return [unicode_to_str(element) for element in input]
-  elif isinstance(input, unicode):
-    return input.encode('utf-8')
-  else:
+  # if isinstance(input, dict):
+  #   return {unicode_to_str(key):unicode_to_str(value) for key,value in input.iteritems()}
+  # elif isinstance(input, list):
+  #   return [unicode_to_str(element) for element in input]
+  # # elif isinstance(input, unicode):
+  # #   return input.encode('utf-8')
+  # else:
     return input
